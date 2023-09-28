@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radar</title>
+    <style>
+        body{
+            background-color: grey;
+            font: normal 18pt Arial;
+            color: black;
+        }
+        input{
+            color: rgb(129, 16, 16);
+            width: 100px ;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1>Sistema de multas</h1>
+    Velocidade do carro <input type="number" name="txt1" id="txt1">Km/h
+    <input type="button" value="Verificar" onclick="Calcular()">
+    </div>
+    <div id="res">
+        ...
+    </div>
+    <script>
+        
+    function Calcular()
+        var v = window.document.querySelector('txt1')
+        var r = window.document.querySelector('div#res')
+        var vel = Number(v.value)
+        r.innerHTML = `sua veocidade atual é ${vel}Km/h`
+        if (vel > 60){
+            r.innerHTML += `Você foi MULTADO por ultrapassar a velocidade permitida`
+        } else
+            r.innerHTML += `Dirigija com cuidado!`
+
+    </script>   
+</body>
+</html>

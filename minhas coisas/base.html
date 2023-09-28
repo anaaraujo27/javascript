@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora Simples</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Digite dois numeros:
+            </p>
+        <p>
+            <input type="number" name="num1" id="txtn1">
+            <input type="number" name="num2" id="txtn2">
+        </p>
+        <p>
+            <input type="button" value="+" onclick="soma()">
+            <input type="button" value="-" onclick="subtração()">
+            <input type="button" value="x" onclick="multiplicação()">
+            <input type="button" value="÷" onclick="divisão()">
+        </p>
+        </div>
+        <div id="res">
+            ...
+        </div>
+    </section>
+    <script src="java.js"></script>
+</body>
+</html>
